@@ -1,11 +1,15 @@
-def greeting(name, age=28):
+def greeting(name, age=28, color="red"):
     #Greets user with 'name' from 'input box' and 'age', if available, default age is used
-    print('Hello '  +  name + ', you are ' + str(age) +'!')
+    #print('Hello ' +(name)+ " , you will be " + str(age+1) + " years old next birthday")
+    print(f"Hello {name}, you will be {age+1} years old next birthday")
     print(f'Hello {name}, you are {age}!')
+    print(f"We hear you like the color {color}!")
+
 
 name = input('Enter your name: ')
 age = input('Enter your age: ')
-greeting(name, 32)
+color = input("What is your favorite color: ")
+greeting(name, int(age), color)
 # 1. Add new print statement - on a new line
 #    which says 'We hear you like the color xxx! xxx is a string with color 
 # 2. extend the function with another  input parameter 'color', that defaults to 'red'
