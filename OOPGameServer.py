@@ -1,3 +1,6 @@
+class GameContainer:
+    def __init__()
+
 class HubPlayer:
     
     def __init__(self, name,email,username, player_id):

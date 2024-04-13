@@ -17,6 +17,12 @@ class CustomerBankAccount:
     def get_balance(self):
         return self.balance
         
+    def get_email(self):
+        return self.email    
+    
+    def set_email(self,email):
+        self.email = email
+        
     # Could definitely used edge case testing
     def change_balance(self, balance):
         print("would you like to add to your balance or transfer funds?")
@@ -45,5 +51,7 @@ customer1 = CustomerBankAccount(
     phone_number="555-1234"
 )
 
-customer1.change_balance(25.00)
-
+# customer1.change_balance(25.00)
+print(customer1.get_email())
+customer1.set_email('lmartin@gmail.com')
+print(customer1.get_email())
